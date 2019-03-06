@@ -23,7 +23,7 @@ class WordPressRepository implements Repository {
 			$data->name              = $post->post_title;
 			$data->slug              = $post->post_name;
 			$data->version           = get_post_meta( $post->ID, '_version', true );
-			$data->date              = get_post_meta( $post->ID, '_date', true );
+			$data->date              = get_post_meta( $post->ID, '_last_updated', true );
 			$data->package           = get_post_meta( $post->ID, '_package', true );
 			$data->uri               = get_post_meta( $post->ID, '_plugin_uri', true );
 			$data->author            = get_post_meta( $post->ID, '_author', true );
